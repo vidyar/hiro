@@ -1,0 +1,4 @@
+composer.phar
+phpunit.phar
+db.sqlite
+vendor/

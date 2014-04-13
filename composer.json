@@ -1,0 +1,19 @@
+{
+    "name": "bgruszka/hiro",
+    "type": "library",
+    "description": "Hiro",
+    "keywords": [ "hiro" ],
+    "homepage": "https://github.com/bgruszka/hiro",
+    "license": "MIT",
+    "authors": [
+        { "name": "bgruszka", "email": "blazej@gruszka.info" }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Infor\\Hiro\\": "src/"
+        }
+    }
+}
