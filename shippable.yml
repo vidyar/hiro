@@ -7,6 +7,7 @@ before_script:
   - composer dumpautoload
 
 script:
+  - php -l tests/ServiceContainerTest.php
   - phpunit --bootstrap tests/bootstrap.php tests
 
 notifications:
