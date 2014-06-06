@@ -8,7 +8,7 @@ before_script:
 
 
 script:
-  - php -v
+  #- php -v
   - php -l tests/ServiceContainerTest.php
   - phpunit --bootstrap tests/bootstrap.php tests
 
