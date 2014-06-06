@@ -1,13 +1,14 @@
 language: php
 
 php:
-  - 5.4
+  - 5.5
 
 before_script:
   - composer dumpautoload
 
+
 script:
-  - php -v
+  #- php -v
   - php -l tests/ServiceContainerTest.php
   - phpunit --bootstrap tests/bootstrap.php tests
 
