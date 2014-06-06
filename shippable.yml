@@ -2,14 +2,14 @@ language: php
 
 php:
   - 5.5
-  - hhvm
+  
 
 before_script:
   - composer dumpautoload
 
 
 script:
-  - php -v
+  #- php -v
  # - phpunit --bootstrap tests/bootstrap.php tests
   - phpunit --log-junit shippable/testresults/junit.xml --bootstrap tests/bootstrap.php tests
   - phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
