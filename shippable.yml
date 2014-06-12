@@ -13,8 +13,7 @@ script:
  # - phpunit --bootstrap tests/bootstrap.php tests
   - phpunit --log-junit shippable/testresults/junit.xml --bootstrap tests/bootstrap.php tests
   - phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
-  - php -r "date_default_timezone_set('Europe/Kiev');"
-
+  
   
 install: true
 
