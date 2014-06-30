@@ -14,9 +14,13 @@ script:
   #- phpunit --log-junit shippable/testresults/junit.xml --bootstrap tests/bootstrap.php tests
   #- phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
   
-  - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
+  #- phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
   
-install: true
 
-notifications:
-  email: false
+install: true
+script: true 
+before_archive:
+      - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
+      #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
+after_archive:
+      - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
