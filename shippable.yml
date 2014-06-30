@@ -18,6 +18,6 @@ script:
   
 
 install: true
-script: true 
+#script: true 
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
