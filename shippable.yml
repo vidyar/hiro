@@ -11,16 +11,13 @@ before_script:
 script:
   - php -v
  # - hpunit --bootstrap tests/bootstrap.php tests
-  - phpunit --bootstrap tests/bootstrap.php tests
+  #- phpunit --bootstrap tests/bootstrap.php tests
   #- phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
   
-  #- phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
+  - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
   
 
 install: true
 script: true 
-before_archive:
-      - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
-      #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 after_archive:
-      - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
+      - echo $SHIPPABLE_ARTIFACTS_URL
