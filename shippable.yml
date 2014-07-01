@@ -6,7 +6,9 @@ php:
 
 before_script:
   - composer dumpautoload
-
+env:
+  global:
+    - secure: fmos628jwWOFGL22htPs0cwMaUxE427hOE/OLWT7l1DDbxaSBSlC9Al6MY+/iVwuKQL4JJtfypVmnyMdX/bQDbw54nvtOregOSJzwarMk30RiVyXJtyp7+fax7klxkKKG0TCIKD/pQOXUjMgAP8h4r4JMdgZp5zoPqYMSyCeEQ8CRkiSPW8q7Xus0JORv01iP+AMAZh0/gwHWMxxlgP3LqtNnna3RTwZaLDtnl1OFwCQXCAC5OtTIDUfbfl8QPgWZK/c2px3R2CYStNt6nOMjaKUNAaZVLhyF4Jdn7UbQy3vALJYv+d5QVzip3F8CMe9FX5WFDcOYUUgqG+nGPlxsg==
 
 script:
   - php -v
@@ -15,7 +17,7 @@ script:
   #- phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
   
   - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
-  
+  - echo $name
 
 install: true
 #script: true 
