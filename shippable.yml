@@ -2,7 +2,7 @@ language: php
 
 php:
   - 5.5
-  
+  - 5.6  
 
 before_script:
   - composer dumpautoload
@@ -11,6 +11,7 @@ env:
     - secure: fmos628jwWOFGL22htPs0cwMaUxE427hOE/OLWT7l1DDbxaSBSlC9Al6MY+/iVwuKQL4JJtfypVmnyMdX/bQDbw54nvtOregOSJzwarMk30RiVyXJtyp7+fax7klxkKKG0TCIKD/pQOXUjMgAP8h4r4JMdgZp5zoPqYMSyCeEQ8CRkiSPW8q7Xus0JORv01iP+AMAZh0/gwHWMxxlgP3LqtNnna3RTwZaLDtnl1OFwCQXCAC5OtTIDUfbfl8QPgWZK/c2px3R2CYStNt6nOMjaKUNAaZVLhyF4Jdn7UbQy3vALJYv+d5QVzip3F8CMe9FX5WFDcOYUUgqG+nGPlxsg==
   matrix:
     - secure: uCK7EfDsE1bG2aON381Vbcu1xWwnsMB0ptb+T8rNzxpbwn8yCpKeWvHPC5r7qbpwohDGXeU7neJ8QC6mcXSQ6zQqSHIxsQLw0tjcA6L8ynjPTxL6cwfSuqeIRY0NhXA0OGslRehsifzy2whR6XKmyG7ISEZkKFydaIboR8Rb0jj2cLbotlpTSkQejlbOw36+DKDJ2SJeJBTHASJuBjYtxAFokpNt3Ms5tOlichtOAeB/Im5yHPKazhP1Oe4lfgQeU7LyO5SxPVkq01k3zw+gchaE07kQ3whXhubB+/0ND+p4WXrO4mVDXdoNjCe6eJgGE6v/NhilQdkMgly8YzwVbg==
+
     
 script:
   - php -v
