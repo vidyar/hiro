@@ -13,7 +13,7 @@ script:
  # - phpunit --bootstrap tests/bootstrap.php tests
   - phpunit --log-junit shippable/testresults/junit.xml --bootstrap tests/bootstrap.php tests
   - phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
-  
+  - git rev-parse --abbrev-ref HEAD
   
   
 
