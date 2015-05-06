@@ -20,3 +20,5 @@ script:
 
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
+
+build_image: shippable/minv2
