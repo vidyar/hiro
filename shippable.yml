@@ -28,5 +28,7 @@ after_script:
   - curl -XPOST https://apibeta.shippable.com/projects/53a96545c948494300366b6c/build?token=$SHIPPABLE_API_TOKEN
 install: true
 #script: true 
+
+archive: true
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
