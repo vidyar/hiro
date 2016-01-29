@@ -27,3 +27,5 @@ after_script:
   - echo $key
 
 build_image: shippable/minv2
+
+archive: true
